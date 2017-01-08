@@ -1,0 +1,370 @@
+/*
+#007692
+for
+1bbc9b
+
+282a2b
+with 
+
+
+Theme Name: Hive One
+Theme URI: https://wordpress.org/themes/twentysixteen/
+Author: Rodrigo Leon
+Author URI: https://github.com/rodrigoleon
+Description: Accessible website.
+Version: 1.0
+Template: twentysixteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+*/
+
+/* Base */
+
+/*WP Reset*/
+.alignnone{margin:5px 20px 20px 0}.aligncenter,div.aligncenter{display:block;margin:5px auto}.alignright{float:right;margin:5px 0 20px 20px}.alignleft{float:left;margin:5px 20px 20px 0}a img.alignright{float:right;margin:5px 0 20px 20px}a img.alignleft,a img.alignnone{margin:5px 20px 20px 0}a img.alignleft{float:left}a img.aligncenter{display:block;margin-left:auto;margin-right:auto}.wp-caption{background:#fff;border:1px solid #f0f0f0;max-width:96%;padding:5px 3px 10px;text-align:center}.wp-caption.alignleft,.wp-caption.alignnone{margin:5px 20px 20px 0}.wp-caption.alignright{margin:5px 0 20px 20px}.wp-caption img{border:0;height:auto;margin:0;max-width:98.5%;padding:0;width:auto}.wp-caption p.wp-caption-text{font-size:11px;line-height:17px;margin:0;padding:0 4px 5px}.screen-reader-text{clip:rect(1px,1px,1px,1px);position:absolute!important;white-space:nowrap;height:1px;width:1px;overflow:hidden}.screen-reader-text:focus{background-color:#f1f1f1;border-radius:3px;box-shadow:0 0 2px 2px rgba(0,0,0,.6);clip:auto!important;color:#21759b;display:block;font-size:14px;font-size:.875rem;font-weight:700;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
+
+body{
+	line-height: 1.66em;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Dancing Script', cursive;
+	font-family: 'Chivo', sans-serif;
+	color: #888888;
+}
+
+a{
+	color: #007692;
+}
+
+a:focus, a:hover{
+	color: #007692;
+	text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+	color: #444;
+}
+
+.text-hide{
+	margin: 0;
+	padding: 0;
+}
+
+.btn-primary.active, .btn-primary:active,
+.btn-primary.focus, .btn-primary:focus,
+.btn-primary:active:focus,
+.btn-primary {
+    color: #007692;
+    background-color: #fff;
+    border-color: #007692;
+    border-width: 2px;
+    text-transform: uppercase;
+    transition: all 300ms ease-in-out;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 0;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #007692;
+    border-color: #007692;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #007692;
+    border-color: #007692;
+    border-width: 2px;
+    text-transform: uppercase;
+    transition: all 300ms ease-in-out;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 0;
+}
+
+.btn-secondary:hover {
+    color: #007692;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+/* Nav */
+
+.navbar-default .navbar-brand{
+	color: #eee;
+	padding: 6px 15px;
+}
+
+.navbar-brand svg {
+    height: 36px;
+    width: 34px;
+    fill: #eee;
+    vertical-align: middle;
+}
+
+
+@media only screen and (min-width: 768px){
+	.navbar-default .navbar-brand{
+		padding: 10px 15px;
+	}
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
+	color: #007692;
+}
+
+.navbar-default {
+    background-color: #282a2b;
+    border-color: #fff;
+    border-radius: 0;
+    border: 0;
+    margin: 0;
+}
+
+@media only screen and (min-width: 768px){
+	.navbar-nav {
+		float: right;	
+	}
+}
+
+.navbar-default .navbar-nav>li>a{
+	color: #eee;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 16px;
+	text-transform: uppercase;
+	transition: all 300ms ease-in-out;
+}
+
+.dropdown-menu>li>a {
+    padding: 10px 20px;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover,
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover,
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+	background-color: #007692;
+	color: #fff;
+}
+
+#hero{
+	padding: 180px 0;
+	background-image: url(assets/images/hero.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	/*background-attachment: fixed;*/
+}
+
+#hero:before{
+	content: '';
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#hero h1{
+	color: #eee;
+	font-size: 120px;
+	font-family: 'Dancing Script', cursive;
+}
+
+#hero .hero-text{
+	padding: 0 20%;
+    color: #eee;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.text-light{
+	color: #888;
+}
+
+.text-light .h4{
+	color: #fff;
+}
+
+.text-light a{
+	color: #888;
+}
+.text-light a:hover, .text-light a:active{
+	color: #007692;
+}
+
+.m-b-60{
+	margin-bottom: 60px;
+}
+
+.p-y-20{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.p-y-40{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.p-y-80{
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.p-y-160{
+	padding-top: 160px;
+	padding-bottom: 160px;
+}
+
+#mission{
+	background-color: #f9fafc;
+}
+
+.page-id-28 #primary{
+	display: none;
+}
+
+#services h3{
+	padding: 40px 0;
+	margin: 0;
+	word-wrap: break-word;
+}
+
+#services p{
+	margin-bottom: 40px;
+	line-height: 30px;
+}
+
+.service-icon{
+	height: 100px;
+	width: 100px;
+	margin: 0 auto;
+	border-radius: 50%;
+	border: 2px solid #e5e5e5;
+	line-height: 136px;
+	transition: all 300ms ease-in-out;
+}
+
+.service-icon:hover, .col-md-3:hover .service-icon{
+	background: #007692;
+	border-color: #007692;
+}
+
+.service-icon svg{
+	fill: #888;
+	transition: all 300ms ease-in-out;
+}
+
+.service-icon:hover svg, .col-md-3:hover .service-icon svg{
+	fill: #fff;
+}
+
+#cta{
+	background-image: url(assets/images/parallax.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+	font-size: 16px;
+	color: white;
+}
+
+#cta:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+}
+
+#cta h2{
+	color: #fff;
+}
+
+/* Media Page */
+
+#media-logos{
+	background: #007692;
+}
+
+#media-logos img{
+	transition: all 300ms ease-in-out;
+	opacity: 0.7;
+	height: 105px;
+    width: auto;
+    margin: 10px 40px;
+}
+
+#media-logos img:hover{
+	opacity: 1;
+}
+
+.card{
+	width: 80%;
+	padding: 20px;
+	margin: 20px auto;
+	border-bottom: 1px solid #eee;
+}
+
+.card img, .card iframe{
+	display: block;
+	margin: 10px auto;
+}
+
+/* End Media Page */
+
+footer#footer{
+	background-color: #282a2b;
+}
+
+#footer hr{
+	border: 3px solid #007692;
+}
+
+.social a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    text-align: center;
+    line-height: 36px;
+    color: #888;
+    background: rgba(0,0,0,0.1);
+    transition: all 300ms ease-in-out;
+}
+
+.social a:hover{
+	background: #007692;
+	color: white;
+}
+
+.entry-footer{
+	display: none;
+}
+
+/* Ramp Page Template */
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.featurette-heading span{
+	font-size: 20px;
+}
